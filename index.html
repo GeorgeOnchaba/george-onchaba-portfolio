@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>George Onchaba — Portfolio</title>
+<title>George Onchaba — Software architect, NiGeNje</title>
 <meta name="description" content="George Onchaba is a software architect and founder of NiGeNje, building AI-native infrastructure and the λ-Safe compiler for invariant-preserving graceful degradation.">
 <meta name="theme-color" content="#F2F5F8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,4 +153,83 @@ footer{padding:48px 0 64px;border-top:1px solid var(--rule);color:var(--muted);f
 <div><h3>Still being built</h3><ul>
 <li>The full AIOps product, beyond its specification</li>
 <li>Published benchmarks for AIOps</li>
-<li>The probabilistic layer of λ-Safe, reserved for Enterprise
+<li>The probabilistic layer of λ-Safe, reserved for Enterprise</li>
+<li>The completed MSc evaluation</li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="background"><div class="wrap">
+<div class="two">
+<div>
+<h2 class="s">Experience</h2>
+<ul class="tl">
+<li><b>NiGeNje</b><span>Founder and architect. AI-native infrastructure, AIOps and AI governance.</span></li>
+<li><b>Tollanis Solutions</b><span>Remote, UK healthcare automation.</span></li>
+<li><b>Fusion Tech Partners</b><span>Backend engineering.</span></li>
+<li><b>Sunflash Technologies</b><span>Backend engineering.</span></li>
+</ul>
+</div>
+<div>
+<h2 class="s">Practice</h2>
+<ul class="tl">
+<li><b>Architecture</b><span>Distributed systems, orchestration, fault tolerance</span></li>
+<li><b>Languages</b><span>Rust, Java and Spring Boot</span></li>
+<li><b>Formal methods</b><span>Type theory, invariants, verification</span></li>
+<li><b>Governance</b><span>AI governance, trust and safety, policy as code</span></li>
+</ul>
+</div>
+</div>
+</div></section>
+
+<section id="writing"><div class="wrap">
+<h2 class="s">Writing</h2>
+<article class="proj" style="border:0;padding:0">
+<div>
+<h3>The Identity Code</h3>
+<p>A book that frames identity as rhythm rather than performance. It connects to the conceptual framework behind NiGeNje: systems and people both hold together by what stays steady while everything around them changes.</p>
+<p>Chance Publishers, Nairobi. ISBN 978-9914-9799-5-4.</p>
+</div>
+</article>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2 class="s" style="margin-bottom:16px">Get in touch</h2>
+<ul class="links">
+<li><a href="https://github.com/gee-cpu" rel="noopener noreferrer" target="_blank">GitHub, @gee-cpu</a></li>
+<li><a href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a></li>
+<li><a href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNje</a></li>
+</ul>
+<p>George Onchaba · Nairobi, Kenya</p>
+</div></footer>
+
+<script>
+(function(){
+var stages=[{n:"Ingest",d:"Reads events"},{n:"Score",d:"Model inference"},{n:"Decide",d:"Applies policy"},{n:"Act",d:"Executes change"}];
+var pipe=document.getElementById('pipe'),inv=document.getElementById('inv'),hint=document.getElementById('hint');
+var state=[0,0,0,0];
+function render(){
+pipe.innerHTML='';
+stages.forEach(function(s,i){
+var el=document.createElement('div');
+el.className='node'+(state[i]==1?' bad':state[i]==2?' deg':'');
+var label=state[i]==1?'Failed':state[i]==2?'Degraded: safe fallback':'Healthy';
+el.innerHTML='<strong>'+s.n+'</strong><span>'+(state[i]==2?'Rule-based fallback':s.d)+'</span><br><span>'+label+'</span>';
+pipe.appendChild(el);});
+var bad=state.indexOf(1)>-1;
+inv.style.borderLeftColor=bad?'var(--warn)':'var(--ok)';
+inv.textContent=bad?'Invariant at risk: no action may run on unchecked policy.':
+state.indexOf(2)>-1?'Invariant holds: degraded stages fall back to rules that still enforce policy.':'Invariant holds: every action passes the policy check.';}
+document.getElementById('fault').onclick=function(){
+var i=state.indexOf(0);
+if(i<0){hint.textContent='All stages already faulted. Reset to try again.';return;}
+state[i]=1;render();hint.textContent=stages[i].n+' failed.';
+setTimeout(function(){state[i]=2;render();hint.textContent=stages[i].n+' degraded to a safe fallback.';},900);};
+document.getElementById('reset').onclick=function(){state=[0,0,0,0];render();hint.textContent='Fault the next stage.';};
+render();
+})();
+</script>
+</body>
+</html>
