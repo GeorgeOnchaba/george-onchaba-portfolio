@@ -4,182 +4,210 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>George Onchaba — Software Architect & Systems Engineer</title>
-<meta name="description" content="George Onchaba — software architect and systems engineer. Enterprise banking and healthcare integrations, distributed systems, runtime governance, and research (λ-Safe, Chinje, NiGeNJe).">
+<meta name="description" content="George Onchaba is a software architect and systems engineer focused on enterprise integrations, distributed systems, backend engineering, and formal methods for resilient runtime control.">
 <meta name="theme-color" content="#F2F5F8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F2F5F8;--surface:#FFFFFF;--ink:#14202B;--muted:#556575;--rule:#D3DBE3;--accent:#1B5CC4;--accent-2:#7C5CFF;--ok:#1E7A4F;--card-shadow:0 6px 18px rgba(20,32,43,0.06);--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#F2F5F8;--surface:#FFFFFF;--ink:#14202B;--muted:#556575;--rule:#D3DBE3;--accent:#1B5CC4;--accent-2:#7C5CFF;--ok:#1E7A4F;--card-shadow:0 10px 28px rgba(20,32,43,0.06);--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:linear-gradient(180deg,var(--bg),#F8FAFC);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0;background:linear-gradient(180deg,#F2F5F8,#F8FAFC);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-header.nav{position:sticky;top:0;background:rgba(242,245,248,0.7);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);z-index:10}
-.nav .wrap{display:flex;gap:18px;align-items:center;height:64px}
+header.nav{position:sticky;top:0;background:rgba(242,245,248,0.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);z-index:10}
+.nav .wrap{display:flex;gap:16px;align-items:center;height:64px}
 .nav b{font-family:var(--serif);font-size:18px;margin-right:auto}
-.nav a{color:var(--muted);text-decoration:none;font-size:15px}
-.nav a:hover{color:var(--ink)}
-.hero{padding:64px 0 32px;display:flex;gap:28px;align-items:flex-start}
+.nav a{color:var(--muted);font-size:15px}
+.hero{padding:72px 0 32px;display:flex;gap:28px;align-items:flex-start}
 .hero-left{flex:1}
-h1{font:600 clamp(28px,5vw,56px)/1.04 var(--serif);margin:0 0 12px}
-.lede{font-size:18px;color:var(--muted);max-width:70ch;margin:0 0 20px}
-.btns{display:flex;gap:10px}
-.btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600}
+h1{font:600 clamp(30px,5vw,60px)/1.04 var(--serif);margin:0 0 14px;letter-spacing:-0.03em}
+.lede{font-size:18px;color:var(--muted);max-width:72ch;margin:0 0 24px}
+.kv{display:flex;gap:12px;flex-wrap:wrap}
+.kv span{background:#F7F9FB;border:1px solid var(--rule);padding:7px 10px;border-radius:999px;color:var(--muted);font-weight:600;font-size:13px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;border:1px solid var(--ink);color:var(--ink);font-weight:700}
 .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;border:0}
 .hero-right{width:320px}
-.contact-card{background:var(--surface);border:1px solid var(--rule);box-shadow:var(--card-shadow);padding:16px;border-radius:12px}
-.contact-card h4{margin:0 0 8px;font-size:15px}
-.contact-list{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
-.contact-list a{color:var(--accent);text-decoration:none;font-weight:600}
+.contact-card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:18px;box-shadow:var(--card-shadow)}
+.contact-card h4{margin:0 0 10px;font-size:15px;font-weight:700}
+.contact-list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.contact-list a{font-weight:700}
 .section{padding:42px 0;border-top:1px solid var(--rule)}
-.h2{font:600 20px var(--serif);margin:0 0 12px}
-.two{display:grid;grid-template-columns:1fr 320px;gap:24px}
-.project, .case{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;margin-bottom:16px;box-shadow:var(--card-shadow)}
-.kv{display:flex;gap:12px;flex-wrap:wrap}
-.kv span{background:#F7F9FB;border:1px solid var(--rule);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;font-size:14px}
-ul.meta{margin:8px 0 0;padding-left:20px;color:var(--muted)}
-footer{padding:36px 0;color:var(--muted);font-size:15px}
+.h2{font:600 22px var(--serif);margin:0 0 18px}
+.two{display:grid;grid-template-columns:1.4fr 0.9fr;gap:24px}
+.project, .case{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--card-shadow)}
+.project h3, .case h3{margin:0 0 8px;font-size:20px;line-height:1.3}
+.project p, .case p{margin:0 0 10px;color:var(--ink)}
+ul.meta{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+ul.meta li{margin:0 0 6px}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;border:1px solid var(--rule);margin-bottom:10px;background:#F8FAFC;color:var(--muted)}
+footer{padding:42px 0 64px;color:var(--muted)}
 .links{display:flex;gap:12px;flex-wrap:wrap}
-.link-btn{background:transparent;border:1px solid var(--rule);padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600}
-@media (max-width:900px){.two{grid-template-columns:1fr}.hero{flex-direction:column}.hero-right{width:100%}}
+.link-btn{background:transparent;border:1px solid var(--rule);padding:8px 12px;border-radius:8px;color:var(--ink);font-weight:700}
+@media (max-width:900px){.hero{flex-direction:column}.hero-right{width:100%}.two{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap"><b>George Onchaba</b><a href="#work">Work</a><a href="#architecture">Architecture</a><a href="#experience">Experience</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></header>
+<header class="nav">
+  <div class="wrap">
+    <b>George Onchaba</b>
+    <a href="#work">Work</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#experience">Experience</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
 <main>
 <div class="wrap">
-<section class="hero">
-<div class="hero-left">
-<h1>Systems that keep their promises when things break</h1>
-<p class="lede">I'm George Onchaba — software architect and systems engineer in Nairobi. I design and build enterprise integrations and resilient distributed systems that connect declared intent to enforceable runtime control and verifiable outcomes.</p>
-<div class="kv">
-<span>Software architecture</span><span>Distributed systems</span><span>Banking & payments</span><span>Formal methods</span>
-</div>
-<div style="margin-top:18px" class="btns">
-<a class="btn primary" href="https://github.com/gee-cpu/lambda-safe" rel="noopener noreferrer" target="_blank">λ-Safe (source)</a>
-<a class="btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
-</div>
-</div>
-<div class="hero-right">
-<div class="contact-card">
-<h4>Contact</h4>
-<ul class="contact-list">
-<li><a href="https://github.com/gee-cpu" rel="noopener noreferrer" target="_blank">GitHub, @gee-cpu</a></li>
-<li><a href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a></li>
-<li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a></li>
-<li><a href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a></li>
-</ul>
-</div>
-</div>
-</section>
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Systems that keep their promises when things break.</h1>
+      <p class="lede">I’m George Onchaba, a software architect and systems engineer based in Nairobi. My work spans enterprise banking integrations, healthcare automation, distributed systems, backend architecture, and research into resilient runtime control and formal guarantees.</p>
+      <div class="kv">
+        <span>Backend engineering</span>
+        <span>Distributed systems</span>
+        <span>Banking & payments</span>
+        <span>Formal methods</span>
+      </div>
+      <div class="btns">
+        <a class="btn primary" href="https://github.com/gee-cpu/lambda-safe" rel="noopener noreferrer" target="_blank">λ-Safe source</a>
+        <a class="btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
+      </div>
+    </div>
 
-<section id="architecture" class="section">
-<h2 class="h2">Unified architecture — intent → control → evidence</h2>
-<div class="two">
-<div>
-<p>The portfolio is structured around a single engineering approach composed of three parts:</p>
-<ul class="meta">
-<li><strong>Chinje</strong> — intent and conformance: evaluates whether a running system remains aligned with its authorized intent and governs resolution when it drifts.</li>
-<li><strong>λ-Safe</strong> — invariants and safe degradation: formalizes which guarantees must hold and what reduced operating modes are permitted.</li>
-<li><strong>NiGeNJe Control Fabric</strong> — runtime transition control: admits or rejects consequential operations, contains unsafe behaviour, reconciles state and records verifiable evidence.</li>
-</ul>
-</div>
-<div>
-<div class="project">
-<h3>Key principles</h3>
-<ul class="meta">
-<li>Admission before execution</li>
-<li>Reconciliation, not blind recovery</li>
-<li>Auditable decisions and evidence</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
+    <div class="hero-right">
+      <div class="contact-card">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><a href="https://github.com/gee-cpu" rel="noopener noreferrer" target="_blank">GitHub, @gee-cpu</a></li>
+          <li><a href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a></li>
+          <li><a href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<section id="work" class="section">
-<h2 class="h2">Selected work</h2>
-<div class="project">
-<h3>λ-Safe — invariant-preserving degradation (Published)</h3>
-<p>Type-theoretic framework and Rust prototype that makes allowed degradation explicit so systems can continue operating without silently breaking critical invariants.</p>
-<ul class="meta">
-<li>Paper: <a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">10.5281/zenodo.17067644</a></li>
-<li>Source: <a href="https://github.com/gee-cpu/lambda-safe" rel="noopener noreferrer" target="_blank">github.com/gee-cpu/lambda-safe</a></li>
-</ul>
-</div>
+  <section id="architecture" class="section">
+    <h2 class="h2">Architecture focus</h2>
+    <div class="two">
+      <div>
+        <p>My work is grounded in one principle: systems should not only stay available, but remain aligned with the intent and constraints they were built to follow.</p>
+        <ul class="meta">
+          <li><strong>Chinje</strong> — intent and conformance: evaluates whether a system remains aligned with its authorized architecture and rules.</li>
+          <li><strong>λ-Safe</strong> — invariants and safe degradation: formalizes the guarantees that must still hold when the system is operating under reduced capacity.</li>
+          <li><strong>NiGeNJe</strong> — runtime control: governs consequential state transitions, admission, containment, recovery and evidence.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="project">
+          <h3>Core principles</h3>
+          <ul class="meta">
+            <li>Intent before execution</li>
+            <li>Evidence before confidence</li>
+            <li>Recovery without violating invariants</li>
+            <li>Traceable decisions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="project">
-<h3>NiGeNJe — runtime control fabric (Specified / in development)</h3>
-<p>Control platform for admission, containment, constrained optimization, reconciliation and certification of consequential state transitions.</p>
-<ul class="meta"><li>Platform specification and architecture documents; focus on policy-as-code admission and decision evidence.</li></ul>
-</div>
+  <section id="work" class="section">
+    <h2 class="h2">Selected work</h2>
 
-<div class="project">
-<h3>Chinje — intent conformance (Research & reference implementation)</h3>
-<p>Intent-aware conformance framework that classifies system state as ALIGNED, DRIFTED, UNKNOWN or DEGRADED and governs authorized remediation.</p>
-</div>
-</section>
+    <div class="project">
+      <span class="tag">Published</span>
+      <h3>λ-Safe</h3>
+      <p>A type-theoretic framework for safe degradation in distributed systems. It focuses on the guarantees that must remain true even when a system loses components, resources or operating modes.</p>
+      <ul class="meta">
+        <li>Paper: <a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">10.5281/zenodo.17067644</a></li>
+        <li>Source: <a href="https://github.com/gee-cpu/lambda-safe" rel="noopener noreferrer" target="_blank">github.com/gee-cpu/lambda-safe</a></li>
+      </ul>
+    </div>
 
-<section id="experience" class="section">
-<h2 class="h2">Professional experience</h2>
+    <div class="project">
+      <span class="tag">In progress</span>
+      <h3>NiGeNJe</h3>
+      <p>An architecture and runtime-control platform for policy-aware execution, recovery, containment, and evidence-backed operations. The goal is practical control over consequential decisions in distributed and autonomous systems.</p>
+    </div>
 
-<div class="case">
-<h3>Finsense Africa — KCB Bank assignment</h3>
-<p><strong>Jan 2025–Aug 2025</strong> — Banking integrations covering card flows, international transfers, provider integrations and merchant statement automation.</p>
-<ul class="meta">
-<li>SACCO Link, IMT Rwanda, Thunes/TerraPay/MFS Africa integrations</li>
-<li>Payment workflows, transaction integrity, duplicate prevention, SFTP automation, API integration</li>
-<li>Java, Spring Boot, REST/SOAP, ActiveMQ Artemis, Oracle, OpenShift</li>
-</ul>
-</div>
+    <div class="project">
+      <span class="tag">Research</span>
+      <h3>Chinje</h3>
+      <p>A conformance framework for intent-aware systems, focused on detecting drift, evaluating evidence, and governing resolution when a system deviates from its authorized behaviour.</p>
+    </div>
+  </section>
 
-<div class="case">
-<h3>Tollanis Solutions — Senior Software Engineer</h3>
-<p><strong>May 2022–Dec 2024</strong> — Backend architecture and integrations for enterprise clients (healthcare onboarding, identity verification).</p>
-<ul class="meta">
-<li>Delivered multiple microservices; integrated 30+ external APIs; improved p95 latency.</li>
-<li>Java, Spring Boot, Kubernetes, OAuth2, CI/CD</li>
-</ul>
-</div>
+  <section id="experience" class="section">
+    <h2 class="h2">Professional experience</h2>
 
-<div class="case">
-<h3>Fusion Tech Partners & Broadmax Systems</h3>
-<p><strong>2017–2022</strong> — Backend engineering roles focused on enterprise services, API design and delivery.</p>
-<ul class="meta">
-<li>Java/Spring Boot, REST APIs, containerized deployments, service reliability.</li>
-</ul>
-</div>
+    <div class="case">
+      <h3>Finsense Africa — KCB Bank assignment</h3>
+      <p><strong>Jan 2025–Aug 2025</strong> — Worked across core banking and payment integration workstreams, including SACCO Link, IMT Rwanda, payment-provider integrations, merchant statement automation, KYC, and transaction integrity work.</p>
+      <ul class="meta">
+        <li>Built and maintained integrations for payment and banking flows in Java and Spring Boot.</li>
+        <li>Handled transaction validation, duplicate prevention, request processing, provider integration, and downstream troubleshooting.</li>
+        <li>Worked in OpenShift environments with Oracle and event-driven messaging components, including ActiveMQ Artemis.</li>
+        <li>Focused on service reliability, data integrity, and secure integration patterns in financial systems.</li>
+      </ul>
+    </div>
 
-</section>
+    <div class="case">
+      <h3>Tollanis Solutions — Senior Software Engineer</h3>
+      <p><strong>May 2022–Dec 2024</strong> — Backend architecture and integration delivery for enterprise clients, including healthcare onboarding and identity verification systems.</p>
+      <ul class="meta">
+        <li>Delivered multiple Spring Boot microservices and integrated 30+ external APIs.</li>
+        <li>Implemented secure API patterns, OAuth 2.1 workflows, and service-to-service integrations.</li>
+        <li>Improved platform performance through caching, query optimization, and service resourcing improvements.</li>
+      </ul>
+    </div>
 
-<section id="writing" class="section">
-<h2 class="h2">Writing & research</h2>
-<div class="project">
-<h3>λ-Safe — publication</h3>
-<p>2025 — A type-theoretic framework for invariant-preserving degradation (see paper and source above).</p>
-</div>
-<div class="project">
-<h3>The Identity Code — book</h3>
-<p>Chance Publishers, Nairobi. ISBN 978-9914-9799-5-4.</p>
-</div>
-</section>
+    <div class="case">
+      <h3>Fusion Tech Partners & Broadmax Systems</h3>
+      <p><strong>2017–2022</strong> — Built and maintained backend services for enterprise and healthcare systems, with emphasis on resilience, integration, and API delivery.</p>
+      <ul class="meta">
+        <li>Java, Spring Boot, REST APIs, microservices, database access, debugging, and maintenance.</li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="writing" class="section">
+    <h2 class="h2">Writing & research</h2>
+
+    <div class="project">
+      <h3>λ-Safe — publication</h3>
+      <p>Published research on the type-theoretic treatment of safe degradation, invariants, and reconciliation in distributed systems.</p>
+      <ul class="meta">
+        <li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">Read the paper</a></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>The Identity Code</h3>
+      <p>A book exploring identity, continuity, and the patterns that hold systems and people together while everything changes around them. ISBN 978-9914-9799-5-4.</p>
+    </div>
+  </section>
 </div>
 </main>
 
 <footer id="contact">
-<div class="wrap">
-<h2 class="h2">Get in touch</h2>
-<p>George Onchaba · Nairobi, Kenya</p>
-<div class="links" style="margin-top:8px">
-<a class="link-btn" href="https://github.com/gee-cpu" rel="noopener noreferrer" target="_blank">GitHub, @gee-cpu</a>
-<a class="link-btn" href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a>
-<a class="link-btn" href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a>
-<a class="link-btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
-</div>
-<p style="margin-top:12px;color:var(--muted);font-size:14px">Repository: <a href="https://github.com/gee-cpu/george-onchaba-portfolio" rel="noopener noreferrer" target="_blank">gee-cpu/george-onchaba-portfolio</a></p>
-</div>
+  <div class="wrap">
+    <h2 class="h2">Get in touch</h2>
+    <p>George Onchaba · Nairobi, Kenya</p>
+    <div class="links" style="margin-top:10px">
+      <a class="link-btn" href="https://github.com/gee-cpu" rel="noopener noreferrer" target="_blank">GitHub, @gee-cpu</a>
+      <a class="link-btn" href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a>
+      <a class="link-btn" href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a>
+      <a class="link-btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
+    </div>
+    <p style="margin-top:12px;font-size:14px">Repository: <a href="https://github.com/gee-cpu/george-onchaba-portfolio" rel="noopener noreferrer" target="_blank">gee-cpu/george-onchaba-portfolio</a></p>
+  </div>
 </footer>
 </body>
 </html>
