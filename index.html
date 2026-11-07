@@ -1,213 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>George Onchaba — Software Architect & Systems Engineer</title>
-<meta name="description" content="George Onchaba is a software architect and systems engineer focused on enterprise integrations, distributed systems, backend engineering, and formal methods for resilient runtime control.">
-<meta name="theme-color" content="#F2F5F8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#F2F5F8;--surface:#FFFFFF;--ink:#14202B;--muted:#556575;--rule:#D3DBE3;--accent:#1B5CC4;--accent-2:#7C5CFF;--ok:#1E7A4F;--card-shadow:0 12px 30px rgba(20,32,43,0.06);--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:linear-gradient(180deg,#F2F5F8,#F8FAFC);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-header.nav{position:sticky;top:0;background:rgba(242,245,248,0.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);z-index:10}
-.nav .wrap{display:flex;gap:18px;align-items:center;height:64px}
-.nav b{font-family:var(--serif);font-size:18px;margin-right:auto}
-.nav a{color:var(--muted);font-size:15px}
-.hero{padding:72px 0 32px;display:flex;gap:28px;align-items:flex-start}
-.hero-left{flex:1}
-h1{font:600 clamp(30px,5vw,60px)/1.04 var(--serif);margin:0 0 14px;letter-spacing:-0.03em}
-.lede{font-size:18px;color:var(--muted);max-width:72ch;margin:0 0 24px}
-.kv{display:flex;gap:12px;flex-wrap:wrap}
-.kv span{background:#F7F9FB;border:1px solid var(--rule);padding:7px 10px;border-radius:999px;color:var(--muted);font-weight:600;font-size:13px}
-.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.btn{display:inline-block;padding:11px 18px;border-radius:10px;border:1px solid var(--ink);color:var(--ink);font-weight:700}
-.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;border:0}
-.hero-right{width:320px}
-.contact-card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:18px;box-shadow:var(--card-shadow)}
-.contact-card h4{margin:0 0 10px;font-size:15px;font-weight:700}
-.contact-list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
-.contact-list a{font-weight:700}
-.section{padding:42px 0;border-top:1px solid var(--rule)}
-.h2{font:600 22px var(--serif);margin:0 0 18px}
-.two{display:grid;grid-template-columns:1.4fr 0.9fr;gap:24px}
-.project, .case{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--card-shadow)}
-.project h3, .case h3{margin:0 0 8px;font-size:20px;line-height:1.3}
-.project p, .case p{margin:0 0 10px;color:var(--ink)}
-ul.meta{margin:10px 0 0;padding-left:20px;color:var(--muted)}
-ul.meta li{margin:0 0 6px}
-.tag{display:inline-block;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;border:1px solid var(--rule);margin-bottom:10px;background:#F8FAFC;color:var(--muted)}
-footer{padding:42px 0 64px;color:var(--muted)}
-.links{display:flex;gap:12px;flex-wrap:wrap}
-.link-btn{background:transparent;border:1px solid var(--rule);padding:8px 12px;border-radius:8px;color:var(--ink);font-weight:700}
-@media (max-width:900px){.hero{flex-direction:column}.hero-right{width:100%}.two{grid-template-columns:1fr}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta name="description" content="George Onchaba is a software architect and systems engineer in Nairobi, building resilient backend systems and open-source tools for governed software.">
+  <title>George Onchaba — Software Architect &amp; Systems Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--bg:#f4f6f8;--paper:#fff;--ink:#17212b;--muted:#526171;--line:#dce2e8;--blue:#2459d3;--green:#146c4a;--shadow:0 12px 32px rgba(23,33,43,.06);--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:5;background:rgba(244,246,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav-inner{height:64px;display:flex;align-items:center;gap:24px}.brand{margin-right:auto;font:800 16px var(--display);color:var(--ink)}.nav a:not(.brand){font-size:14px;color:var(--muted)}
+    .hero{padding:90px 0 64px;display:grid;grid-template-columns:1fr 290px;gap:48px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--green)}h1,h2,h3{font-family:var(--display);line-height:1.2}h1{font-size:clamp(38px,6vw,66px);letter-spacing:-.045em;margin:12px 0 20px;max-width:760px}.lede{font-size:18px;color:var(--muted);max-width:680px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.chip,.label{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700;color:var(--muted);background:#fff}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;border:1px solid var(--ink);border-radius:8px;padding:10px 15px;color:var(--ink);font-weight:700}.button.primary{background:var(--blue);border-color:var(--blue);color:#fff}.contact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}.contact h2{font-size:17px;margin:0 0 12px}.contact ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}.contact li,.contact a{font-size:14px;font-weight:600}
+    section.content{padding:48px 0;border-top:1px solid var(--line)}.section-title{font-size:26px;margin:0 0 22px;letter-spacing:-.025em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}.card h3{font-size:20px;margin:12px 0 8px}.card p{margin:0 0 12px;color:var(--muted)}.card ul{padding-left:20px;color:var(--muted);margin:10px 0}.card li{margin:5px 0}.links{display:flex;gap:12px;flex-wrap:wrap;font-weight:700}.notice{border-left:3px solid var(--green);padding:4px 0 4px 16px;color:var(--muted);max-width:850px}.experience{display:grid;gap:14px}.experience .card{box-shadow:none}.experience h3{margin:0 0 7px}.date{font-size:13px;font-weight:700;color:var(--green)}footer{padding:36px 0 54px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:62px;gap:28px}.grid{grid-template-columns:1fr}.nav-inner{gap:13px}.nav a:not(.brand){font-size:12px}.wrap{width:min(100% - 32px,1080px)}}@media(max-width:460px){.nav-inner{height:auto;min-height:60px;flex-wrap:wrap;padding:10px 0}.brand{width:100%}.hero{padding-top:44px}}
+  </style>
 </head>
 <body>
-<header class="nav">
-  <div class="wrap">
-    <b>George Onchaba</b>
-    <a href="#work">Work</a>
-    <a href="#architecture">Architecture</a>
-    <a href="#experience">Experience</a>
-    <a href="#writing">Writing</a>
-    <a href="#contact">Contact</a>
-  </div>
-</header>
-
-<main>
-<div class="wrap">
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Systems that keep their promises when things break.</h1>
-      <p class="lede">I’m George Onchaba, a software architect and systems engineer based in Nairobi. My work spans enterprise banking integrations, healthcare automation, distributed systems, backend architecture, and research into resilient runtime control and formal guarantees.</p>
-      <div class="kv">
-        <span>Backend engineering</span>
-        <span>Distributed systems</span>
-        <span>Banking & payments</span>
-        <span>Formal methods</span>
-      </div>
-      <div class="btns">
-        <a class="btn primary" href="https://github.com/GeorgeOnchaba/lambda-safe" rel="noopener noreferrer" target="_blank">λ-Safe source</a>
-        <a class="btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="contact-card">
-        <h4>Contact</h4>
-        <ul class="contact-list">
-          <li><a href="https://github.com/GeorgeOnchaba" rel="noopener noreferrer" target="_blank">GitHub, @GeorgeOnchaba</a></li>
-          <li><a href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a></li>
-          <li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a></li>
-          <li><a href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="architecture" class="section">
-    <h2 class="h2">Architecture focus</h2>
-    <div class="two">
+  <header class="nav"><nav class="wrap nav-inner" aria-label="Main navigation">
+    <a class="brand" href="#top">George Onchaba</a><a href="#work">Selected work</a><a href="#approach">Approach</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </nav></header>
+  <main id="top" class="wrap">
+    <section class="hero" aria-labelledby="intro-title">
       <div>
-        <p>My work is grounded in one principle: systems should not only stay available, but remain aligned with the intent and constraints they were built to follow.</p>
-        <ul class="meta">
-          <li><strong>Chinje</strong> — intent and conformance: evaluates whether a system remains aligned with its authorized architecture and rules.</li>
-          <li><strong>λ-Safe</strong> — invariants and safe degradation: formalizes the guarantees that must still hold when the system is operating under reduced capacity.</li>
-          <li><strong>NiGeNJe</strong> — runtime control: governs consequential state transitions, admission, containment, recovery and evidence.</li>
-        </ul>
+        <p class="eyebrow">Software architect · Systems engineer · Nairobi, Kenya</p>
+        <h1 id="intro-title">Building dependable systems for consequential work.</h1>
+        <p class="lede">I’m George Onchaba. I work across backend engineering, enterprise integrations, distributed systems and formal methods—with a focus on making software more reliable, understandable and accountable.</p>
+        <div class="chips" aria-label="Areas of focus"><span class="chip">Backend systems</span><span class="chip">Distributed systems</span><span class="chip">Financial integrations</span><span class="chip">Formal methods</span></div>
+        <div class="actions"><a class="button primary" href="https://github.com/GeorgeOnchaba/lambda-safe">Explore λ-Safe Core</a><a class="button" href="https://egm.dev">Explore EGM</a></div>
       </div>
-      <div>
-        <div class="project">
-          <h3>Core principles</h3>
-          <ul class="meta">
-            <li>Intent before execution</li>
-            <li>Evidence before confidence</li>
-            <li>Recovery without violating invariants</li>
-            <li>Traceable decisions</li>
-          </ul>
-        </div>
+      <aside class="contact" id="contact"><h2>Connect</h2><ul>
+        <li><a href="https://github.com/GeorgeOnchaba" rel="noopener noreferrer">GitHub · @GeorgeOnchaba</a></li>
+        <li><a href="https://x.com/geeonchaba" rel="noopener noreferrer">X · @geeonchaba</a></li>
+        <li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer">λ-Safe research paper</a></li>
+        <li><a href="https://nigenje-landing-page.vercel.app" rel="noopener noreferrer">NiGeNje website</a></li>
+      </ul></aside>
+    </section>
+
+    <section id="work" class="content">
+      <h2 class="section-title">Selected public work</h2>
+      <div class="grid">
+        <article class="card"><span class="label">Open source · Apache-2.0</span><h3>λ-Safe Core</h3><p>A deterministic, fail-closed compiler and static verifier for authority-bounded distributed control-plane contracts. It checks a defined hard fragment and emits a canonical manifest and certificate when the required obligations pass.</p><div class="links"><a href="https://github.com/GeorgeOnchaba/lambda-safe">Source code</a><a href="https://doi.org/10.5281/zenodo.17067644">Research paper</a></div></article>
+        <article class="card"><span class="label">Open source · MIT</span><h3>λ-Safe Compiler UI</h3><p>A browser-based interface for the public λ-Safe compiler API, with contract input, diagnostics, artifact inspection and verification workflows.</p><div class="links"><a href="https://github.com/GeorgeOnchaba/lambda-safe-fe">Source code</a><a href="https://github.com/GeorgeOnchaba/lambda-safe">Backend project</a></div></article>
+        <article class="card"><span class="label">Open source · Apache-2.0</span><h3>Elephant-Goldfish Model</h3><p>Open-source skills for designing and reviewing software with AI agents. The workflow pairs a context-rich design process with fresh-context review to help surface gaps before implementation.</p><div class="links"><a href="https://github.com/GeorgeOnchaba/elephant-goldfish-model">Source code</a><a href="https://egm.dev">Project website</a></div></article>
+        <article class="card"><span class="label">NiGeNje · Proprietary</span><h3>Governed systems engineering</h3><p>NiGeNje is my ongoing work on trustworthy, policy-aware systems. This portfolio intentionally shares only a high-level description and approved public links—not private source code, internal designs, or implementation details.</p><div class="links"><a href="https://nigenje-landing-page.vercel.app" rel="noopener noreferrer">Public website</a><a href="https://github.com/GeorgeOnchaba/GeorgeOnchaba">Open-core boundary</a></div></article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="work" class="section">
-    <h2 class="h2">Selected work</h2>
+    <section id="approach" class="content">
+      <h2 class="section-title">How I approach systems</h2>
+      <p class="notice">I value clear boundaries between what a system verifies, what it assumes and what remains outside its guarantees. My public work emphasizes explicit constraints, traceable decisions, careful failure handling and honest communication about limitations.</p>
+      <div class="grid" style="margin-top:20px">
+        <article class="card"><h3>Reliable by design</h3><p>Build services and integrations around data integrity, predictable behavior and clear operational boundaries.</p></article>
+        <article class="card"><h3>Evidence over claims</h3><p>Make assumptions, verification scope and limitations visible so teams can make informed decisions.</p></article>
+      </div>
+    </section>
 
-    <div class="project">
-      <span class="tag">Published</span>
-      <h3>λ-Safe</h3>
-      <p>A type-theoretic framework for safe degradation in distributed systems. It focuses on the guarantees that must remain true even when a system loses components, resources or operating modes.</p>
-      <ul class="meta">
-        <li>Paper: <a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">10.5281/zenodo.17067644</a></li>
-        <li>Source: <a href="https://github.com/GeorgeOnchaba/lambda-safe" rel="noopener noreferrer" target="_blank">github.com/GeorgeOnchaba/lambda-safe</a></li>
-      </ul>
-    </div>
+    <section id="experience" class="content">
+      <h2 class="section-title">Professional experience</h2>
+      <div class="experience">
+        <article class="card"><p class="date">Jan 2025 – Aug 2025</p><h3>Finsense Africa — KCB Bank assignment</h3><p>Worked on core banking and payment integration workstreams, with a focus on reliable transaction processing, provider integrations and service operations.</p></article>
+        <article class="card"><p class="date">May 2022 – Dec 2024</p><h3>Tollanis Solutions — Senior Software Engineer</h3><p>Delivered backend architecture and integration work for enterprise clients, including healthcare onboarding and identity verification systems.</p></article>
+        <article class="card"><p class="date">2017 – 2022</p><h3>Fusion Tech Partners &amp; Broadmax Systems</h3><p>Built and maintained backend services for enterprise and healthcare systems, emphasizing resilience, integration and API delivery.</p></article>
+      </div>
+    </section>
 
-    <div class="project">
-      <span class="tag">In progress</span>
-      <h3>NiGeNJe</h3>
-      <p>An architecture and runtime-control platform for policy-aware execution, recovery, containment, and evidence-backed operations. The goal is practical control over consequential decisions in distributed and autonomous systems.</p>
-    </div>
-
-    <div class="project">
-      <span class="tag">Research</span>
-      <h3>Chinje</h3>
-      <p>A conformance framework for intent-aware systems, focused on detecting drift, evaluating evidence, and governing resolution when a system deviates from its authorized behaviour.</p>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <h2 class="h2">Professional experience</h2>
-
-    <div class="case">
-      <h3>Finsense Africa — KCB Bank assignment</h3>
-      <p><strong>Jan 2025–Aug 2025</strong> — Worked across core banking and payment integration workstreams, including SACCO Link, IMT Rwanda, payment-provider integrations, merchant statement automation, KYC, and transaction integrity work.</p>
-      <ul class="meta">
-        <li>Built and maintained integrations for payment and banking flows in Java and Spring Boot.</li>
-        <li>Handled transaction validation, duplicate prevention, request processing, provider integration, and downstream troubleshooting.</li>
-        <li>Worked in OpenShift environments with Oracle and event-driven messaging components, including ActiveMQ Artemis.</li>
-        <li>Focused on service reliability, data integrity, and secure integration patterns in financial systems.</li>
-      </ul>
-    </div>
-
-    <div class="case">
-      <h3>Tollanis Solutions — Senior Software Engineer</h3>
-      <p><strong>May 2022–Dec 2024</strong> — Backend architecture and integration delivery for enterprise clients, including healthcare onboarding and identity verification systems.</p>
-      <ul class="meta">
-        <li>Delivered multiple Spring Boot microservices and integrated 30+ external APIs.</li>
-        <li>Implemented secure API patterns, OAuth 2.1 workflows, and service-to-service integrations.</li>
-        <li>Improved platform performance through caching, query optimization, and service resourcing improvements.</li>
-      </ul>
-    </div>
-
-    <div class="case">
-      <h3>Fusion Tech Partners & Broadmax Systems</h3>
-      <p><strong>2017–2022</strong> — Built and maintained backend services for enterprise and healthcare systems, with emphasis on resilience, integration, and API delivery.</p>
-      <ul class="meta">
-        <li>Java, Spring Boot, REST APIs, microservices, database access, debugging, and maintenance.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="writing" class="section">
-    <h2 class="h2">Writing & research</h2>
-
-    <div class="project">
-      <h3>λ-Safe — publication</h3>
-      <p>Published research on the type-theoretic treatment of safe degradation, invariants, and reconciliation in distributed systems.</p>
-      <ul class="meta">
-        <li><a href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">Read the paper</a></li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>The Identity Code</h3>
-      <p>A book exploring identity, continuity, and the patterns that hold systems and people together while everything changes around them. ISBN 978-9914-9799-5-4.</p>
-    </div>
-  </section>
-</div>
-</main>
-
-<footer id="contact">
-  <div class="wrap">
-    <h2 class="h2">Get in touch</h2>
-    <p>George Onchaba · Nairobi, Kenya</p>
-    <div class="links" style="margin-top:10px">
-      <a class="link-btn" href="https://github.com/GeorgeOnchaba" rel="noopener noreferrer" target="_blank">GitHub, @GeorgeOnchaba</a>
-      <a class="link-btn" href="https://x.com/geeonchaba" rel="noopener noreferrer" target="_blank">X, @geeonchaba</a>
-      <a class="link-btn" href="https://doi.org/10.5281/zenodo.17067644" rel="noopener noreferrer" target="_blank">λ-Safe paper</a>
-      <a class="link-btn" href="https://nigenje-2026.vercel.app/index.html" rel="noopener noreferrer" target="_blank">NiGeNJe</a>
-    </div>
-    <p style="margin-top:12px;font-size:14px">Repository: <a href="https://github.com/GeorgeOnchaba/george-onchaba-portfolio" rel="noopener noreferrer" target="_blank">GeorgeOnchaba/george-onchaba-portfolio</a></p>
-  </div>
-</footer>
+    <section class="content">
+      <h2 class="section-title">Research &amp; writing</h2>
+      <div class="grid">
+        <article class="card"><h3>λ-Safe</h3><p>Research on formalizing hard invariants and safe degradation in distributed systems.</p><div class="links"><a href="https://doi.org/10.5281/zenodo.17067644">Read the paper</a></div></article>
+        <article class="card"><h3>The Identity Code</h3><p>A book exploring identity, continuity and the patterns that hold systems and people together through change. ISBN 978-9914-9799-5-4.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><p>George Onchaba · Nairobi, Kenya</p><p>Only public, approved projects are linked here. NiGeNje platform and enterprise implementation details remain proprietary.</p><p>Portfolio source: <a href="https://github.com/GeorgeOnchaba/george-onchaba-portfolio">GeorgeOnchaba/george-onchaba-portfolio</a></p></div></footer>
 </body>
 </html>
