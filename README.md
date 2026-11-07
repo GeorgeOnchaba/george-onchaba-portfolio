@@ -1,10 +1,16 @@
 # George Onchaba Portfolio
 
-This repository hosts the public portfolio website for George Onchaba, founder of NiGeNje and researcher in resilient distributed systems and AI-native infrastructure.
+Public portfolio website for George Onchaba, software architect and systems engineer working on backend systems, enterprise integrations, distributed systems and formal methods.
 
 ## Live site
 
-The site is designed to be hosted with GitHub Pages from the root of this repository.
+This static site is designed for GitHub Pages from the repository root.
+
+## Portfolio and IP boundary
+
+The portfolio highlights approved public work, including [λ-Safe Core](https://github.com/GeorgeOnchaba/lambda-safe), its [MIT-licensed UI](https://github.com/GeorgeOnchaba/lambda-safe-fe), and the [Elephant-Goldfish Model](https://github.com/GeorgeOnchaba/elephant-goldfish-model). NiGeNje is described only at a high level and linked through its public website and open-core statement.
+
+NiGeNje platform and enterprise implementation details are proprietary. This site intentionally does not link to private repositories, disclose their source, or reproduce internal architecture, designs, operational instructions, or credentials. Public project descriptions are limited to material the repositories identify as public and approved.
 
 ## Local preview
 
